@@ -161,3 +161,58 @@ h1,h2,h3,h4,p, *{
     justify-content: space-between; 
     gap: 2rem;
 }
+
+/* footer section */
+
+.footer{
+    padding: 2rem 7rem 3rem 7rem;
+    display: flex;
+    background-color: #137FA3;
+    color: white;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    gap: 2rem;
+}
+
+.contactInfo > h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 3.5rem;
+}
+
+.contactInfo > p{
+    max-width: 90%;
+    font-size: 1.3rem;
+}
+
+.phoneAndMail{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.footerIcon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerIcon > svg{
+    filter: invert(1);
+}
+
+.footerImg{
+    max-width: 800px;
+    min-height: 600px;
+    object-fit: cover;
+}
+
+.footerSocials{
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+}
