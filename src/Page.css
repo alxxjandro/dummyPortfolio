@@ -1,218 +1,282 @@
-
-
-.header{
-    padding: 2rem 7rem 3rem 7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #137FA3;
-    background: linear-gradient(163deg, rgba(19, 127, 163, 1) 56%, rgba(255, 255, 255, 1) 56%);
+.header {
+  padding: 2rem 7rem 3rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #137fa3;
+  background: linear-gradient(
+    163deg,
+    rgba(19, 127, 163, 1) 56%,
+    rgba(255, 255, 255, 1) 56%
+  );
 }
 
-h1,h2,h3,h4,p, *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+p,
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* image section */
 
-.imageContainer{
-    max-width: 580px;
-    max-height: 600px;
-    position: relative;
-    box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.25);
+.imageContainer {
+  max-width: 580px;
+  max-height: 600px;
+  position: relative;
+  box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.25);
 }
 
 .imageContainer > img {
-    max-width: 100%;
-    min-height: 600px;
-    object-fit: cover;
+  max-width: 100%;
+  min-height: 600px;
+  object-fit: cover;
 }
 
-.name{
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    font-size: 4rem;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
+.name {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 4rem;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* about me section */
 
-.aboutMe{
-    line-height: 35px;
-    background-color: white;
-    display: flex;
-    padding: 2rem 1.5rem;
-    flex-direction: column;
-    justify-content: space-around;
-    max-width: 650px;
-    min-height: 500px;
-    box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.25);
+.aboutMe {
+  line-height: 35px;
+  background-color: white;
+  display: flex;
+  padding: 2rem 1.5rem;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 650px;
+  min-height: 500px;
+  box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.25);
 }
 
-.aboutMe > h1{
-    font-size: 2.7rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
+.aboutMe > h1 {
+  font-size: 2.7rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
 }
 
 /* about me text */
-.aboutMe > p{
-    font-size: 1.3rem;
+.aboutMe > p {
+  font-size: 1.3rem;
 }
 
 /* icons container */
-.aboutMeBtns{
-    padding-right: 1rem;
-    display: flex;
-    justify-content: end;
-    gap: 1.8rem;
+.aboutMeBtns {
+  padding-right: 1rem;
+  display: flex;
+  justify-content: end;
+  gap: 1.8rem;
 }
 
-.aboutMeIcon{
-    cursor: pointer;
-    max-width: 35px;
-    min-height: 35px;
+.aboutMeIcon {
+  cursor: pointer;
+  max-width: 35px;
+  min-height: 35px;
 }
 
-.projectIcon{
-    cursor: pointer;
-    max-width: 20px;
-    min-height: 20px;
+.projectIcon {
+  cursor: pointer;
+  max-width: 20px;
+  min-height: 20px;
 }
 
 /* project cards */
 
-.project{
-    max-width: 390px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.15);
-    -webkit-box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.15);
+.project {
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.15);
 }
 
-.projectName{
-    display: flex;
-    justify-content: space-around;
-    padding: .4rem 1rem;
+.projectName {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.4rem 1rem;
 }
-.projectDesc{
-    padding: 0rem 1rem 4rem 1rem;
-
+.projectDesc {
+  padding: 0rem 1rem 4rem 1rem;
 }
 
 .projectName > h4 {
-    flex: 1;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.6rem;
-    font-weight: normal;
+  flex: 1;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.6rem;
+  font-weight: normal;
 }
 
 .projectName > h4 + div {
-    min-width: 60px;
-    display: flex;
-    justify-content: space-evenly;
+  min-width: 60px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.projectImg{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3rem;
-    max-width: 390px;
-    min-height: 260px;
-    color: white;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    line-height: 40px;
-    background-color: #137FA3;
-    margin-bottom: .2rem;
-    padding: 4rem;
+.projectImg {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  max-width: 390px;
+  min-height: 260px;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  line-height: 40px;
+  background-color: #137fa3;
+  margin-bottom: 0.2rem;
+  padding: 4rem;
 }
 
 /* content section */
 
-.contentDiv{
-    padding: 2rem 7rem 8rem 7rem;
+.contentDiv {
+  padding: 2rem 7rem 8rem 7rem;
 }
 
 .contentDiv > h1 {
-    padding-bottom: 1rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3rem;
-    font-weight: normal;
+  padding-bottom: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  font-weight: normal;
 }
 
 /* projects grid */
 
-.projects{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 390px);
-    justify-content: space-between; 
-    gap: 2rem;
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 390px);
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 /* footer section */
 
-.footer{
-    padding: 2rem 7rem 3rem 7rem;
-    display: flex;
-    background-color: #137FA3;
-    color: white;
+.footer {
+  padding: 2rem 7rem 3rem 7rem;
+  display: flex;
+  background-color: #137fa3;
+  color: white;
 }
 
-.contactInfo{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2rem;
-    gap: 2rem;
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  gap: 2rem;
 }
 
-.contactInfo > h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-    font-size: 3.5rem;
+.contactInfo > h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 3.5rem;
 }
 
-.contactInfo > p{
-    max-width: 90%;
-    font-size: 1.3rem;
+.contactInfo > p {
+  max-width: 90%;
+  font-size: 1.3rem;
 }
 
-.phoneAndMail{
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
+.phoneAndMail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .footerIcon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footerIcon > svg {
+  filter: invert(1);
+}
+
+.footerImg {
+  max-width: 800px;
+  min-height: 600px;
+  object-fit: cover;
+}
+
+.footerSocials {
+  display: flex;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+/* Media query's! */
+
+/* Medium Size */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    border: solid 3px blue;
+  }
+
+  .header {
     display: flex;
     align-items: center;
-    gap: 1rem;
-}
-
-.footerIcon > svg{
-    filter: invert(1);
-}
-
-.footerImg{
-    max-width: 800px;
-    min-height: 600px;
-    object-fit: cover;
-}
-
-.footerSocials{
-    display: flex;
+    justify-content: center;
     gap: 2rem;
-    padding-top: 2rem;
+    padding: 4rem 2rem;
+    position: relative;
+    flex-wrap: wrap; /* asegura que no se rompa en pantallas más angostas */
+  }
+
+  .imageContainer {
+    max-width: 350px;
+    min-width: 300px;
+    height: auto;
+    z-index: 2;
+    margin-right: -50px; /* se solapa visualmente */
+    box-shadow: 10px 10px 46px rgba(0, 0, 0, 0.25);
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .aboutMe {
+    z-index: 1;
+    background: white;
+    padding: 2rem;
+    max-width: 450px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .name {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-size: 3rem;
+    color: white;
+    font-family: "Times New Roman", serif;
+  }
+}
+
+/* Small */
+@media (max-width: 600px) {
+  body {
+    border: solid 3px red;
+  }
 }
