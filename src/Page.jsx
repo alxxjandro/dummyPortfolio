@@ -1,6 +1,9 @@
 import miles1024 from './assets/miles-1024.jpg';
 import miles768 from './assets/miles-768.jpg';
 import miles480 from './assets/miles-480.jpg';
+import footer1024 from './assets/footer1024.jpg'
+import footer768 from './assets/footer768.jpg'
+import footer480 from './assets/footer480.jpg'
 import './Page.css';
 
 function Header() {
@@ -19,7 +22,7 @@ function Header() {
                 1024px
             "
             src={miles1024}
-            alt="Descripción de la imagen"
+            alt="Miles morales portrait photo"
             />
             <h1 className='name'>Miles Morales</h1>
         </div>
@@ -56,21 +59,26 @@ function Content(){
     )
 }
 
-function pickRandomColor(){
-    const colors = [
-    '#C0392B', 
-    '#8E44AD', 
-    '#27AE60', 
-    '#D2527F', 
-    '#D35400', 
-    '#2980B9', 
-    '#F39C12', 
-    '#16A085', 
-    '#2C3E50', 
-    '#7D3C98'  
-    ];
-
-    return colors[Math.floor(Math.random() * colors.length)];
+function Footer(){
+    return(
+        <div>
+            <img
+            srcSet={`
+                ${footer480} 480w,
+                ${footer768} 768w,
+                ${footer1024} 1024w
+            `}
+            sizes="
+                (max-width: 600px) 100vw,
+                (max-width: 1024px) 90vw,
+                1024px
+            "
+            src={footer1024}
+            alt="Miles morales throwing a web"
+            />
+            FOOTER
+        </div>
+    )
 }
 
 function Project({name = 'Project Name', desc = 'Short description of the project. Just a couple sentences will do.' }){
@@ -92,11 +100,29 @@ function Project({name = 'Project Name', desc = 'Short description of the projec
     )
 }
 
+function pickRandomColor(){
+    const colors = [
+    '#C0392B', 
+    '#8E44AD', 
+    '#27AE60', 
+    '#D2527F', 
+    '#D35400', 
+    '#2980B9', 
+    '#F39C12', 
+    '#16A085', 
+    '#2C3E50', 
+    '#7D3C98'  
+    ];
+
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+
 function Page() {
   return (
     <div>
         <Header/>
         <Content/>
+        <Footer/>
     </div>
   );
 }

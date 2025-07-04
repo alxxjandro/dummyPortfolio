@@ -143,7 +143,7 @@ h1,h2,h3,h4,p, *{
 /* content section */
 
 .contentDiv{
-    padding: 2rem 7rem 3rem 7rem;
+    padding: 2rem 7rem 8rem 7rem;
 }
 
 .contentDiv > h1 {
