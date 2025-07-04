@@ -1,13 +1,12 @@
 
 
 .header{
-    padding: 2rem 4rem 3rem 2rem;
+    padding: 2rem 7rem 3rem 7rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #137FA3;
     background: linear-gradient(163deg, rgba(19, 127, 163, 1) 56%, rgba(255, 255, 255, 1) 56%);
-
 }
 
 h1,h2,h3,h4,p, *{
@@ -20,8 +19,8 @@ h1,h2,h3,h4,p, *{
 /* image section */
 
 .imageContainer{
-    max-width: 480px;
-    max-height: 500px;
+    max-width: 580px;
+    max-height: 600px;
     position: relative;
     box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.25);
     -webkit-box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.25);
@@ -30,7 +29,7 @@ h1,h2,h3,h4,p, *{
 
 .imageContainer > img {
     max-width: 100%;
-    min-height: 500px;
+    min-height: 600px;
     object-fit: cover;
 }
 
@@ -47,13 +46,14 @@ h1,h2,h3,h4,p, *{
 /* about me section */
 
 .aboutMe{
+    line-height: 35px;
     background-color: white;
     display: flex;
     padding: 2rem 1.5rem;
     flex-direction: column;
     justify-content: space-around;
     max-width: 650px;
-    min-height: 400px;
+    min-height: 500px;
     box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.25);
     -webkit-box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.25);
@@ -75,11 +75,89 @@ h1,h2,h3,h4,p, *{
     padding-right: 1rem;
     display: flex;
     justify-content: end;
-    gap: 1rem;
+    gap: 1.8rem;
 }
 
 .aboutMeIcon{
     cursor: pointer;
-    max-width: 30px;
-    min-height: 30px;
+    max-width: 35px;
+    min-height: 35px;
+}
+
+.projectIcon{
+    cursor: pointer;
+    max-width: 20px;
+    min-height: 20px;
+}
+
+/* project cards */
+
+.project{
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.15);
+}
+
+.projectName{
+    display: flex;
+    justify-content: space-around;
+    padding: .4rem 1rem;
+}
+.projectDesc{
+    padding: 0rem 1rem 4rem 1rem;
+
+}
+
+.projectName > h4 {
+    flex: 1;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.projectName > h4 + div {
+    min-width: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projectImg{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    max-width: 390px;
+    min-height: 260px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 40px;
+    background-color: #137FA3;
+    margin-bottom: .2rem;
+    padding: 4rem;
+}
+
+/* content section */
+
+.contentDiv{
+    padding: 2rem 7rem 3rem 7rem;
+}
+
+.contentDiv > h1 {
+    padding-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+/* projects grid */
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 390px);
+    justify-content: space-between; 
+    gap: 2rem;
 }
