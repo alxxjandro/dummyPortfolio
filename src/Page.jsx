@@ -124,21 +124,23 @@ function Footer() {
           />
         </div>
       </div>
-      <img
-        className="footerImg"
-        srcSet={`
-                ${footer480} 480w,
-                ${footer768} 768w,
-                ${footer1024} 1024w
-            `}
-        sizes="
-                (max-width: 600px) 100vw,
-                (max-width: 1024px) 90vw,
-                1024px
-            "
-        src={footer1024}
-        alt="Miles morales throwing a web"
-      />
+      <div className="footerImgContainer">
+        <img
+          className="footerImg"
+          srcSet={`
+                    ${footer480} 480w,
+                    ${footer768} 768w,
+                    ${footer1024} 1024w
+                `}
+          sizes="
+                    (max-width: 600px) 100vw,
+                    (max-width: 1024px) 90vw,
+                    1024px
+                "
+          src={footer1024}
+          alt="Miles morales throwing a web"
+        />
+      </div>
     </div>
   );
 }
