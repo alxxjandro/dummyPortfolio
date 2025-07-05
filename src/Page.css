@@ -338,7 +338,8 @@ p,
     text-align: center;
   }
 
-  .footerImgContainer {
+  .projectImg{
+    min-width: 100%;
   }
 
   .footerImg {
@@ -363,5 +364,18 @@ p,
   .name {
     font-size: 3.6rem;
     padding: 1rem;
+  }
+
+  .footerImgContainer {
+    padding: 0;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .footerImg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: unset;
   }
 }
